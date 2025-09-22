@@ -142,7 +142,7 @@ jobs:
 
     - name: Create EeveeSpotify Package
       run: |
-        EEVEESPOTIFY_PACKAGE="EeveeSpotify-${EEVEESPOTIFY_VERSION}-${SPOTIFY_VERSION}.ipa"
+        EEVEESPOTIFY_PACKAGE="com.spotify.client-9.0.80-Decrypted.ipa"
         echo "EEVEESPOTIFY_PACKAGE=$EEVEESPOTIFY_PACKAGE" >> $GITHUB_ENV
 
         ivinject-arm64 "$SPOTIFY_PACKAGE" "$EEVEESPOTIFY_PACKAGE" \
